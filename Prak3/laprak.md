@@ -1,6 +1,6 @@
-# Changelog
+# Tugas 3 Praktikum : SQL Data Manipulation Language
 
-## v1.0.0
+Dalam SQL
 
 ### Added or Changed
 - Added this changelog :)

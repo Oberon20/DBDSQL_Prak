@@ -9,11 +9,11 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
    ```
 2. Buat table STRATA
    ```
-create table AKADEMIK.STRATA(
+   create table AKADEMIK.STRATA(
 	ID_STRATA smallint not null primary key,
 	SINGKAT VARCHAR (10),
 	STRATA VARCHAR (45)
-)
+   )
    ```
 3. Buat tabel FAKULTAS
  

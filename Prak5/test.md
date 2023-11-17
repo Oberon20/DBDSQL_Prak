@@ -11,18 +11,24 @@ Berikut merupakan perintah dari laporan
    from sampel_university.student;
    ````
 
-2. Perintah Substr.
+2. Perintah SUBSTR_INDEX
     ```
     select substring_index(dept_name,' ',1) as DEPTNAME_INDEX
     from sampel_university.department;
     ```
 
-3. Tampilkan nama student dan nama instructor yang bekerja pada department yang
-sama
+3. Perintah Substr.
     ```
-    SELECT student.name, department.dept_name, instructor.name
-    FROM student
-    JOIN department ON student.dept_name = department.dept_name
-    JOIN instructor ON student.dept_name = instructor.dept_name
-    WHERE student.dept_name = instructor.dept_name;
+    select substr(dept_name,1,3) as KARAKTER
+    from sampel_university.department;
+    ```
+4. Perintah TOTAL_CHAR.
+    ```
+    select title,length (title) as TOTAL_CHAR
+    from sampel_university.course;
+    ```
+5. Perintah REPLACE.
+    ```
+    select name, replace (name,'JONO','BUDI') as NAMA_BARU
+    from akademik.mahasiswa ;
     ```

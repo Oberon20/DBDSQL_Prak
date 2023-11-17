@@ -68,13 +68,62 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
 
 ### Data Manipulation
 1. Gunakan perintah USE
-2. INSERT into FAKULTAS
-3. INSERT into STARTA
-4. INSERT into FAKULTAS
-5. INSERT into JURUSAN
-6. INSERT into PRODI
-7. INSERT into SELEKSI_MASUK
-8. INSERT into MAHASISWA
+   ```
+   use AKADEMIK;
+   ```
+2. INSERT into STARTA
+   ```
+   insert into strata (ID_STRATA,SINGKAT,STRATA)
+   values ('1','D1','Diploma');
+
+   insert into strata (ID_STRATA,SINGKAT,STRATA)
+   values ('2','S1','Sarjana');
+
+   insert into strata (ID_STRATA,SINGKAT,STRATA)
+   values ('3','S2','Magister');
+   ```
+3. INSERT into FAKULTAS
+   ```
+   insert into fakultas (ID_FAKULTAS,FAKULTAS)
+   values ('1','Ekonomi & Bisnis');
+
+   insert into fakultas (ID_FAKULTAS,FAKULTAS)
+   values ('2','Ilmu Komputer');
+   ```
+4. INSERT into JURUSAN
+    ```
+    insert into jurusan (ID_JURUSAN,ID_FAKULTAS,JURUSAN)
+    values ('21','2','Informatika');
+
+    insert into jurusan (ID_JURUSAN,ID_FAKULTAS,JURUSAN)
+    values ('22','2','Sistem Informasi');
+
+    insert into jurusan (ID_JURUSAN,ID_FAKULTAS,JURUSAN)
+    values ('23','2','Teknik Komputer');
+    ```
+5. INSERT into PRODI
+    ```
+    insert into prodi (ID_PRODI,ID_STRATA,ID_JURUSAN,PRODI)
+    values ('211','2','21','Teknik Informatika');
+
+    insert into prodi (ID_PRODI,ID_STRATA,ID_JURUSAN,PRODI)
+    values ('212','2','21','Teknik Komputer');
+
+    insert into prodi (ID_PRODI,ID_STRATA,ID_JURUSAN,PRODI)
+    values ('219','3','21','Magister Ilmu Komputer');
+    ```
+6. INSERT into SELEKSI_MASUK
+    ```
+    insert into seleksi_masuk (ID_SELEKSI_MASUK,SINGKAT,SELEKSI_MASUK)
+    values ('1','SNMPTN','SELEKSI NASIONAL MAHASISWA PERGURUAN TINGGI NEGERI');
+
+insert into seleksi_masuk (ID_SELEKSI_MASUK,SINGKAT,SELEKSI_MASUK)
+values ('2','SBMPTN','SELEKSI BERSAMA MAHASISWA PERGURUAN TINGGI NEGERI');
+
+    ```
+7. INSERT into MAHASISWA
+    ```
+    ```
 
 ### Added or Changed
 - Added this changelog :)

@@ -1,12 +1,14 @@
-# Tugas 3 Praktikum : SQL Data Manipulation Language
+# Tugas 4 Praktikum : SQL JOIN
 
-Dalam SQL terdapat berbagai
+Dalam SQL terdapat peintah ``` JOIN ``` yang digunakan untuk mengambil data dari beberapa tabel menjadi satu query baru.
 
-### Data Definition
-1. Membuat schema AKADEMIK
-2. Buat table STRATA
-3. Buat tabel FAKULTAS
-4. Buat tabel JURUSAN
-5. Buat tabel PRODI
-6. Buat tabel SELEKSI_MASUK
-7. Buat tabel MAHASISWA
+### Latihan JOIN
+Berikut merupakan perintah dari laporan
+
+1. Tampilkan semua nama Mahasiswa beserta nama department.
+
+2. Tampilkan semua nama student beserta nama department yang memiliki total SKS
+(total credit) lebih dari 100.
+
+3. Tampilkan nama student dan nama instructor yang bekerja pada department yang
+sama

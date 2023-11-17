@@ -1,15 +1,18 @@
 # Tugas 3 Praktikum : SQL Data Manipulation Language
 
-Dalam SQL terdapat berbagai
+Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi dalam 2 langkah utama, yaitu eksekusi data definition dan data manipulation
 
 ### Data Definition
 1. Membuat schema AKADEMIK
-2. Buat table STRATA
-3. Buat tabel FAKULTAS
-4. Buat tabel JURUSAN
-5. Buat tabel PRODI
-6. Buat tabel SELEKSI_MASUK
-7. Buat tabel MAHASISWA
+   ```
+     create schema AKADEMIK;
+   ```
+3. Buat table STRATA
+4. Buat tabel FAKULTAS
+5. Buat tabel JURUSAN
+6. Buat tabel PRODI
+7. Buat tabel SELEKSI_MASUK
+8. Buat tabel MAHASISWA
 
 
 ### Data Manipulation

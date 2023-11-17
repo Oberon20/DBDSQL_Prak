@@ -5,14 +5,25 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
 ### Data Definition
 1. Membuat schema AKADEMIK
    ```
-     create schema AKADEMIK;
+   create schema AKADEMIK;
    ```
-3. Buat table STRATA
-4. Buat tabel FAKULTAS
-5. Buat tabel JURUSAN
-6. Buat tabel PRODI
-7. Buat tabel SELEKSI_MASUK
-8. Buat tabel MAHASISWA
+2. Buat table STRATA
+   ```
+create table AKADEMIK.STRATA(
+	ID_STRATA smallint not null primary key,
+	SINGKAT VARCHAR (10),
+	STRATA VARCHAR (45)
+)
+   ```
+3. Buat tabel FAKULTAS
+ 
+4. Buat tabel JURUSAN
+   
+5. Buat tabel PRODI
+
+6. Buat tabel SELEKSI_MASUK
+    
+7. Buat tabel MAHASISWA
 
 
 ### Data Manipulation

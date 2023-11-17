@@ -117,22 +117,18 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
     insert into seleksi_masuk (ID_SELEKSI_MASUK,SINGKAT,SELEKSI_MASUK)
     values ('1','SNMPTN','SELEKSI NASIONAL MAHASISWA PERGURUAN TINGGI NEGERI');
 
-insert into seleksi_masuk (ID_SELEKSI_MASUK,SINGKAT,SELEKSI_MASUK)
-values ('2','SBMPTN','SELEKSI BERSAMA MAHASISWA PERGURUAN TINGGI NEGERI');
+    insert into seleksi_masuk (ID_SELEKSI_MASUK,SINGKAT,SELEKSI_MASUK)
+    values ('2','SBMPTN','SELEKSI BERSAMA MAHASISWA PERGURUAN TINGGI NEGERI');
 
     ```
 7. INSERT into MAHASISWA
     ```
+    insert into mahasiswa 
+    (NIM,ID_SELEKSI_MASUK,ID_PRODI,NAMA,ANGKATAN,TGL_LAHIR,KOTA_LAHIR,JENIS_KELAMIN)
+    values ('155150400','1','211','JONI','2015',01/01/1997,'MALANG','W');
+
+    insert into mahasiswa 
+    (NIM,ID_SELEKSI_MASUK,ID_PRODI,NAMA,ANGKATAN,TGL_LAHIR,KOTA_LAHIR,JENIS_KELAMIN)
+    values ('155150401','2','212','JONO','2015',02/10/1997,'SITUBONDO','P');
     ```
 
-### Added or Changed
-- Added this changelog :)
-- Fixed typos in both templates
-- Back to top links
-- Added more "Built With" frameworks/libraries
-- Changed table of contents to start collapsed
-- Added checkboxes for major features on roadmap
-
-### Removed
-
-- Some packages/libraries from acknowledgements I no longer use

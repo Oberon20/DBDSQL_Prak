@@ -1,6 +1,6 @@
 # Tugas 3 Praktikum : SQL Data Manipulation Language
 
-Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi dalam 2 langkah utama, yaitu eksekusi data definition dan data manipulation
+Langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi dalam 2 langkah utama, yaitu eksekusi data definition dan data manipulation
 
 ### Data Definition
 1. Membuat schema AKADEMIK
@@ -82,6 +82,9 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
    insert into strata (ID_STRATA,SINGKAT,STRATA)
    values ('3','S2','Magister');
    ```
+
+   ![STRATA](https://github.com/Oberon20/DBDSQL_Prak/assets/133186338/d41f2dce-e67c-4ec7-bde2-a9c54e2e81c4)
+
 3. INSERT into FAKULTAS
    ```
    insert into fakultas (ID_FAKULTAS,FAKULTAS)
@@ -90,6 +93,9 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
    insert into fakultas (ID_FAKULTAS,FAKULTAS)
    values ('2','Ilmu Komputer');
    ```
+
+   ![FAKULTAS](https://github.com/Oberon20/DBDSQL_Prak/assets/133186338/e682015d-4b09-4e8d-8954-979ac43a1c02)
+
 4. INSERT into JURUSAN
     ```
     insert into jurusan (ID_JURUSAN,ID_FAKULTAS,JURUSAN)
@@ -101,6 +107,9 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
     insert into jurusan (ID_JURUSAN,ID_FAKULTAS,JURUSAN)
     values ('23','2','Teknik Komputer');
     ```
+
+    ![JURUSAN](https://github.com/Oberon20/DBDSQL_Prak/assets/133186338/fda6c60a-3750-49cb-8dec-38615e5b5cd6)
+
 5. INSERT into PRODI
     ```
     insert into prodi (ID_PRODI,ID_STRATA,ID_JURUSAN,PRODI)
@@ -112,6 +121,9 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
     insert into prodi (ID_PRODI,ID_STRATA,ID_JURUSAN,PRODI)
     values ('219','3','21','Magister Ilmu Komputer');
     ```
+
+    ![PRODI](https://github.com/Oberon20/DBDSQL_Prak/assets/133186338/20856cd1-ec99-4564-ae04-df00bab918f8)
+
 6. INSERT into SELEKSI_MASUK
     ```
     insert into seleksi_masuk (ID_SELEKSI_MASUK,SINGKAT,SELEKSI_MASUK)
@@ -121,6 +133,9 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
     values ('2','SBMPTN','SELEKSI BERSAMA MAHASISWA PERGURUAN TINGGI NEGERI');
 
     ```
+
+    ![SELEKSI_MASUK](https://github.com/Oberon20/DBDSQL_Prak/assets/133186338/c13349a4-cb6e-4974-a176-83a7aa7a978a)
+
 7. INSERT into MAHASISWA
     ```
     insert into mahasiswa 
@@ -131,4 +146,6 @@ Berikut merupakan langkah pengerjaan dalam pembuatan schema AKADEMIK yang dibagi
     (NIM,ID_SELEKSI_MASUK,ID_PRODI,NAMA,ANGKATAN,TGL_LAHIR,KOTA_LAHIR,JENIS_KELAMIN)
     values ('155150401','2','212','JONO','2015',02/10/1997,'SITUBONDO','P');
     ```
+    ![MAHASISWA](https://github.com/Oberon20/DBDSQL_Prak/assets/133186338/1c138469-f1c8-4580-bf6b-fc09ff928f49)
+
 

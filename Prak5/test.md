@@ -1,6 +1,6 @@
 # Tugas 5 Praktikum : FUNGSI SKALAR DAN FUNGSI AGREGASI
 
-Dalam SQL terdapat perintah ``` JOIN ``` yang digunakan untuk mengambil data dari beberapa tabel menjadi satu query baru.
+Dalam SQL terdapat perintah fungsi skalar dan fungsi agregasi yang digunakan untuk mengambil data dari beberapa tabel menjadi satu query baru.
 
 ### FUNGSI SKALAR
 Berikut merupakan perintah dari laporan

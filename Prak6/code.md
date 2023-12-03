@@ -1,6 +1,6 @@
 # Tugas 6 Praktikum : SUBQUERY DAN UNION
 
-Dalam SQL terdapat perintah fungsi skalar dan fungsi agregasi yang digunakan untuk mengambil data dari beberapa tabel menjadi satu query baru.
+Dalam SQL terdapat perintah subquery dan union yang digunakan untuk mengambil data dari beberapa tabel menjadi satu query baru.
 
 ### SUBQUERY
 Berikut merupakan perintah dari laporan

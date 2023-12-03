@@ -1,33 +1,42 @@
 # Tugas 6 Praktikum : SUBQUERY DAN UNION
 
-Dalam SQL terdapat perintah subquery dan union yang digunakan untuk mengambil data dari beberapa tabel menjadi satu query baru.
+Dalam SQL terdapat perintah subquery yang digunakan untuk menggabungkan hasil kueri sekunder ke dalam kueri utama dan union yang digunakan untuk menggabungkan hasil dari dua atau lebih kueri SELECT menjadi satu set hasil tunggal.
 
 ### SUBQUERY
 Berikut merupakan perintah dari laporan
 
 1. Menampilkan instructor yang belum pernah mengajar!
    ```
-   select concat(ID,name) as profil
-   from sampel_university.student;
+   SELECT ID, name
+   FROM instructor
+   WHERE ID NOT IN (SELECT DISTINCT ID FROM teaches);
    ````
-
+   Pada instruksi ini, kita diminta menggunakan ```WHERE``` dimana berfungsi untuk memperoleh
+   nilai atau data terkait dari tabel lain berdasarkan kondisi tertentu.
+   
 2. Menampilkan course yang pernah diajar setidaknya 2 instructor!
     ```
-    select substring_index(dept_name,' ',1) as DEPTNAME_INDEX
-    from sampel_university.department;
+    SELECT course_id, title
+    FROM course
+    WHERE course_id IN (
+    SELECT course_id
+    FROM teaches
+    GROUP BY course_id
+    HAVING COUNT(DISTINCT ID) >= 2
+    );
     ```
-
-3. Perintah Substr.
+### UNION
+4. Perintah Substr.
     ```
     select substr(dept_name,1,3) as KARAKTER
     from sampel_university.department;
     ```
-4. Perintah TOTAL_CHAR.
+5. Perintah TOTAL_CHAR.
     ```
     select title,length (title) as TOTAL_CHAR
     from sampel_university.course;
     ```
-5. Perintah REPLACE.
+6. Perintah REPLACE.
     ```
     select name, replace (name,'JONO','BUDI') as NAMA_BARU
     from akademik.mahasiswa ;

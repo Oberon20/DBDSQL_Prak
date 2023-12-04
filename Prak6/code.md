@@ -83,3 +83,18 @@ Berikut merupakan perintah dari laporan
 5. Tampilkan NIM, NAMA, JENIS_KELAMIN, KOTA LAHIR dan ANGKATAN dari Mahasiswa
    Angkatan 2015 dan dari Mahasiswa_Pindahan tetapi kecuali Mahasiswa_Pindahan yang
    memiliki Kota Lahir dengan inisial M urutkan berdasarkan NIM.
+   ```
+   select data.NIM, data.NAMA, data.JENIS_KELAMIN, data.KOTA_LAHIR, data.ANGKATAN
+   from(
+    select * from AKADEMIK.mahasiswa m1
+        where m1.ANGKATAN = 2015
+    union
+    select *
+    from(
+        select * from AKADEMIK.MAHASISWA_PINDAHAN mpz
+        except
+        select * from AKADEMIK.MAHASISWA_PINDAHAN mp
+                 where substr(mp.KOTA_LAHIR, 1, 1) = 'M'
+    ) mp_tanpa_inisial_m
+   ) data;
+   ```
